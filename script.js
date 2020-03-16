@@ -24,8 +24,8 @@ function draw () {
     stroke('rgb(255,255,255)');
     for (let i = 0; i < 6; i++) {
       rotate(60)
-      let d = Math.sqrt(dist(mx, my, pmx, pmy))
-      let sw=map(d,0,4,3,0.1, true)
+      let d = (dist(mx, my, pmx, pmy))
+      sw=lerp(sw,map(d,0,8,7,0.1, true),0.01)
       strokeWeight(sw)
       line(mx, my, pmx, pmy)
       push();
