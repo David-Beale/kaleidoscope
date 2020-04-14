@@ -1,3 +1,4 @@
+//kaleidoscope
 let clearButton
 let sw=0.1;
 
